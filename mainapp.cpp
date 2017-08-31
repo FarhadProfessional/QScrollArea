@@ -12,3 +12,9 @@ MainApp::~MainApp()
 {
     delete ui;
 }
+
+void MainApp::on_btnAddNew_clicked()
+{
+    QLineEdit *lineEdit = new QLineEdit();
+    ui->scrollAreaWidgetContents->layout()->addWidget(lineEdit);
+}

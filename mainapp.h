@@ -2,6 +2,7 @@
 #define MAINAPP_H
 
 #include <QMainWindow>
+#include <QLineEdit>
 
 namespace Ui {
 class MainApp;
@@ -14,6 +15,9 @@ class MainApp : public QMainWindow
 public:
     explicit MainApp(QWidget *parent = 0);
     ~MainApp();
+
+private slots:
+    void on_btnAddNew_clicked();
 
 private:
     Ui::MainApp *ui;
